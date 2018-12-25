@@ -39,7 +39,8 @@ def main():
 	log = sub.geturl()	
 	if log != login and (not 'login_attempt' in log):			
 		print("\n\n[+] Password Find = {}".format(password))			
-		raw_input("ANY KEY to Exit....")			sys.exit(1)
+		raw_input("ANY KEY to Exit....")			
+		sys.exit(1)
 
 def search():	
       global password
