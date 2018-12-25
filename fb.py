@@ -25,7 +25,8 @@ def main():
  br.set_handle_referer(True)
  br.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(), max_time=1)	
  welcome()	
- search()	print("Password မေတြ႕ပါခင္ဗ်ာ") 	
+ search()
+print("Password မေတြ႕ပါခင္ဗ်ာ") 	
  
  def brute(password):
   sys.stdout.write("\r[*] ႀကိဳးစားေနသည္ ..... {}\n".format(password))
