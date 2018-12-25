@@ -12,7 +12,8 @@ def main():
  global br	
  br = mechanize.Browser()
  cj = cookielib.LWPCookieJar()
-br.set_handle_robots(False)	br.set_handle_redirect(True)	
+br.set_handle_robots(False)	
+br.set_handle_redirect(True)	
 br.set_cookiejar(cj)
 br.set_handle_equiv(True)	
 br.set_handle_referer(True)
