@@ -14,8 +14,8 @@ useragents = [('Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/
 
 
 def main():	
-global br
-br = mechanize.Browser()	
+	global br
+        br = mechanize.Browser()	
 cj = cookielib.LWPCookieJar()	
 br.set_handle_robots(False)
 br.set_handle_redirect(True)
@@ -27,8 +27,7 @@ welcome()
 search()	
 print("Password does not exist in the wordlist")
 
-
-	def brute(password):	
+ def brute(password):	
   sys.stdout.write("\r[*] Trying ..... {}\n".format(password))
   sys.stdout.flush()
   br.addheaders = [('User-agent', random.choice(useragents))]	
