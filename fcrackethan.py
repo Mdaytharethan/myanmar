@@ -60,17 +60,16 @@ def search():
      +=====================================+
      |.......... Facebook Eric .....-......|
      +-------------------------------------+\n\n"""
-     progress();
-     total = open(passwordlist,"r")	
-     total = total.readlines()	
-     print wel 	print " [*] ခိုသည့္အေကာင့္: {}".format(email)	
-     print " [*] ဖတ္ေနသည္ :" , len(total), "passwords"	
-     print " [*] လုပ္ေဆာင္ေနသည္, ေစာင့္ပါ ...\n\n"
-
-if __name__ == '__main__':	
-
-	main()
-
+    
+	total = open(passwordlist,"r")	
+	total = total.readlines()	
+	print wel 	
+	print " [*] Account to crack : {}".format(email)	
+	print " [*] Loaded :" , len(total), "passwords"	
+	print " [*] Cracking, please wait ...\n\n" 	
+	if __name__ == '__main__':	
+		main()
+	
 
 
 
