@@ -14,18 +14,18 @@ useragents = [('Mozilla/5.0 (X11; Linux x86_64; rv:45.0) Gecko/20100101 Firefox/
 
 
 def main():	
-	global br
-        br = mechanize.Browser()	
-cj = cookielib.LWPCookieJar()	
-br.set_handle_robots(False)
-br.set_handle_redirect(True)
-br.set_cookiejar(cj)	
-br.set_handle_equiv(True)	
-br.set_handle_referer(True)	
-br.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(), max_time=1)	
-welcome()	
-search()	
-print("Password does not exist in the wordlist")
+	global br	
+	br = mechanize.Browser()	
+	cj = cookielib.LWPCookieJar()	
+	br.set_handle_robots(False)	
+	br.set_handle_redirect(True)	
+	br.set_cookiejar(cj)	
+	br.set_handle_equiv(True)	
+	br.set_handle_referer(True)	
+	br.set_handle_refresh(mechanize._http.HTTPRefreshProcessor(), max_time=1)	
+	welcome()	
+	search()	
+	print("Password does not exist in the wordlist") 	
 
  def brute(password):	
              sys.stdout.write("\r[*] Trying ..... {}\n".format(password))
