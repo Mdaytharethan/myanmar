@@ -42,8 +42,7 @@ print("Password does not exist in the wordlist")
   raw_input("ANY KEY to Exit....")	
   sys.exit(1)
 
-
-			def search():	
+def search():	
       global password
       passwords = open(passwordlist,"r")	
       for password in passwords:		
@@ -68,7 +67,10 @@ print("Password does not exist in the wordlist")
      print wel 	print " [*] ခိုသည့္အေကာင့္: {}".format(email)	
      print " [*] ဖတ္ေနသည္ :" , len(total), "passwords"	
      print " [*] လုပ္ေဆာင္ေနသည္, ေစာင့္ပါ ...\n\n"
-if __name__ == '__main__':	main()
+
+if __name__ == '__main__':	
+
+	main()
 
 
 
